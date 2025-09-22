@@ -68,7 +68,7 @@ WAF configuration (Web Application Firewall)
 modsecurity on;: Ativa o ModSecurity, um firewall de aplicações web.
 
 modsecurity_rules_file /etc/nginx/modsecurity.conf;: Define o arquivo de regras que o ModSecurity vai usar para filtrar ataques.
-----
+---
 
 ---
 
@@ -128,6 +128,7 @@ express-rate-limit: Limita o número de requisições por IP para prevenir ataqu
 bcryptjs: Biblioteca para hash seguro de senhas.
 
 express-validator: Valida e sanitiza dados de entrada do usuário para prevenir ataques de injeção.
+
 ---
 
 Configuração no app.js
@@ -143,6 +144,7 @@ app.use(rateLimit({
 }));
 
 ---
+
 ### Explicação:
 
 app.use(helmet()): Ativa todos os headers de segurança do Helmet.
