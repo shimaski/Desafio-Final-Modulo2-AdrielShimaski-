@@ -117,6 +117,7 @@ Dependências no package.json
   }
 }
 
+---
 
 # Explicação :
 
@@ -141,7 +142,7 @@ app.use(rateLimit({
     message: 'Too many requests from this IP'
 }));
 
-
+------
 Explicação:
 
 app.use(helmet()): Ativa todos os headers de segurança do Helmet.
