@@ -160,3 +160,68 @@ graph TB
     DB1 --> DB3
 ```
 
+# Especificações Técnicas Detalhadas - Loja Zeta
+
+---
+
+## Configuração de Portas e Protocolos
+
+| Serviço    | Porta | Protocolo | Direção  | Acesso       |
+|-----------|-------|-----------|----------|-------------|
+| HTTP      | 80    | TCP       | Inbound  | Público     |
+| HTTPS     | 443   | TCP       | Inbound  | Público     |
+| SSH       | 22    | TCP       | Inbound  | Admin only  |
+| PostgreSQL| 5432  | TCP       | Internal | App only    |
+| Redis     | 6379  | TCP       | Internal | App only    |
+
+---
+
+## Especificações de Hardware
+
+| Componente     | CPU   | RAM  | Storage   | Rede  |
+|----------------|-------|------|----------|-------|
+| Web Server     | 4 vCPU| 8GB  | 100GB SSD| 1Gbps |
+| Database       | 8 vCPU| 16GB | 200GB SSD| 1Gbps |
+| SIEM           | 4 vCPU| 8GB  | 500GB HDD| 1Gbps |
+| Load Balancer  | 2 vCPU| 4GB  | 50GB SSD | 1Gbps |
+
+---
+
+## Fluxo de Tráfego Detalhado
+
+**Requisição Web Completa:**
+1. Cliente → CDN (Cache e proteção DDoS)  
+2. CDN → WAF (Filtragem de ameaças)  
+3. WAF → Load Balancer (Distribuição de carga)  
+4. Load Balancer → Web Server (Processamento)  
+5. Web Server → Database (Consulta dados)  
+6. Web Server → Cliente (Resposta)  
+
+---
+
+## Monitoramento e Logs
+
+- Todos os componentes → Agentes (Coleta de logs)  
+- Agentes → SIEM (Correlação e análise)  
+- SIEM → Dashboards (Visualização)  
+- SIEM → Alertas (Notificações)  
+
+---
+
+## Considerações de Segurança por Camada
+
+### Camada de Rede
+- Segmentação: VLANs separadas por função  
+- ACLs: Controle granular de tráfego  
+- Monitoramento: Detecção de anomalias  
+
+### Camada de Aplicação
+- WAF: Proteção contra OWASP Top 10  
+- Rate Limiting: Prevenção de abuso  
+- Headers Security: Proteções adicionais  
+
+### Camada de Dados
+- Encryption: Dados em trânsito e repouso  
+- Access Control: Princípio do menor privilégio  
+- Backup: Estratégia 3-2-1  
+
