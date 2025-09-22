@@ -5,7 +5,7 @@
 
 ## Diagrama de Arquitetura Principal
 
-### Fluxo de Dados e Proteção
+# Fluxo de Dados e Proteção
 
 ```mermaid
 flowchart TB
@@ -46,7 +46,7 @@ flowchart TB
    
 ## Arquitetura de Rede
 
-# Segmentação e Security Zones
+# Segmentação e Zonas de segurança
 ```mermaid
 graph TB
     Internet[Internet] --> DMZ[DMZ Zone]
@@ -78,4 +78,50 @@ graph TB
     APP --> DATA
     MGMT --> APP
     MGMT --> DATA
+```
+
+## Diagrama de Monitoramento
+
+# Fluxo de Coleta e Análise
+```mermaid
+flowchart LR
+    subgraph DataSources [Fontes de Dados]
+        A1[Aplicação Node.js]
+        A2[Serviços Nginx]
+        A3[Banco PostgreSQL]
+        A4[Sistema Operacional]
+    end
+    
+    subgraph Collection [Coleta]
+        B1[Filebeat]
+        B2[Metricbeat]
+        B3[Wazuh Agent]
+    end
+    
+    subgraph Processing [Processamento]
+        C1[Logstash]
+        C2[Elasticsearch]
+        C3[Wazuh Server]
+    end
+    
+    subgraph Visualization [Visualização]
+        D1[Grafana]
+        D2[Kibana]
+        D3[Alertas]
+    end
+    
+    A1 --> B1
+    A2 --> B2
+    A3 --> B3
+    A4 --> B3
+    
+    B1 --> C1
+    B2 --> C1
+    B3 --> C3
+    
+    C1 --> C2
+    C3 --> C2
+    C2 --> D1
+    C2 --> D2
+    C2 --> D3
 ```
