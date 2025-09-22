@@ -150,6 +150,28 @@ sudo bash wazuh-install.sh -a
 
 ![alt text](/imagens/conos.png)
 
+
+```mermaid
+gantt
+    title Cronograma de Implementação - Loja Zeta
+    dateFormat  YYYY-MM-DD
+    section Fase 1: Fundamentos
+    Preparação       :crit, 2025-09-22, 7d
+    Configuração Rede :active, 2025-09-29, 14d
+    WAF e Proteção   :2025-10-13, 14d
+    
+    section Fase 2: Monitoramento
+    SIEM Instalação  :2025-10-27, 21d
+    Configuração     :2025-11-17, 21d
+    Alertas          :2025-12-08, 21d
+    
+    section Fase 3: Otimização
+    Automação        :2025-12-29, 30d
+    Validação        :2026-01-28, 21d
+    Entrega          :2026-02-18, 14d
+
+```
+
 # Checklist de Entregáveis - Loja Zeta
 
 ---
