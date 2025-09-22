@@ -27,36 +27,61 @@
 | **Vulnerability**| Trivy                       | Open Source  | Scan de containers e código   |
 
 ---
-
 # ESPECIFICAÇÕES DE CONFIGURAÇÃO
 
+---
 
-Componentes:
+## 1. Componentes
 
-WAF/CRS: ModSecurity com regras OWASP Core Rule Set
+- **WAF/CRS:** ModSecurity com regras OWASP Core Rule Set  
+- **Rate Limiting:** Limitação de requisições por IP/endpoint  
+- **Geo-blocking:** Bloqueio de tráfego de regiões de alto risco  
 
-Rate Limiting: Limitação de requisições por IP/endpoint
+---
 
-Geo-blocking: Bloqueio de tráfego de regiões de alto risco
+## 2. Camada de Rede
 
-2.2 Camada de Rede
-Segmentação:
+### 2.1 Segmentação
 
-VLAN 10: Rede pública (DMZ)
+- **VLAN 10:** Rede pública (DMZ)  
+- **VLAN 20:** Rede de aplicação  
+- **VLAN 30:** Rede de banco de dados  
+- **VLAN 40:** Rede administrativa  
 
-VLAN 20: Rede de aplicação
+### 2.2 Controles
 
-VLAN 30: Rede de banco de dados
+- **ACLs (Access Control Lists)** entre VLANs  
+- **NAC (Network Access Control)** para dispositivos  
+- **VPN site-to-site** para acesso remoto seguro  
 
-VLAN 40: Rede administrativa
+---
 
-Controles:
+## 3. Camada de Dados
 
-ACLs (Access Control Lists) entre VLANs
+### 3.1 Estratégia de Backup
 
-NAC (Network Access Control) para dispositivos
+- **Backup completo:** Diário (23:00)  
+- **Backup incremental:** Horário  
+- **Retenção:** 30 dias local + 90 dias na nuvem  
+- **Testes de restauração:** Semanal  
 
-VPN site-to-site para acesso remoto seguro
+### 3.2 Criptografia
+
+- **Dados em repouso:** LUKS + PostgreSQL TDE  
+- **Dados em trânsito:** TLS 1.3  
+
+---
+
+## 4. Especificações Técnicas
+
+### 4.1 Requisitos de Hardware/Software
+
+| Componente       | Especificação             | Quantidade           |
+|-----------------|---------------------------|--------------------|
+| Servidor Web     | 4vCPU, 8GB RAM, 100GB SSD | 2 (ativo/standby) |
+| Banco de Dados   | 8vCPU, 16GB RAM, 200GB SSD | 1 (com replicação) |
+| SIEM             | 4vCPU, 8GB RAM, 500GB HDD | 1                  |
+
 
 ## Camada de Aplicação
 ---
