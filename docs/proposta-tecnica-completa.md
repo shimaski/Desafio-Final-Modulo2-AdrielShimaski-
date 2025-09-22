@@ -555,8 +555,7 @@ A estratégia **80/20** garantiu que os recursos limitados sejam alocados nas me
 - **Métricas de Acompanhamento:** Relatório quinzenal de progresso  
 - **Canal de Comunicação:** Reuniões semanais de alinhamento  
 
-# Ponto Focal: 
-**Adriel Shimaski**  
+# Ponto Focal: **Adriel Shimaski**  
 ---
 
 ##  Checklist de Início Rápido
