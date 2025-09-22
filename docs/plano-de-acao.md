@@ -151,4 +151,4 @@ sudo bash wazuh-install.sh -a
 ![alt text](/imagens/crono.svg.svg)
 
 
-<img src="/imagens/crono.svg.svg" alt="Loja Zeta" width="800">
+<img src="/imagens/crono.svg.svg" alt="Loja Zeta" width="1080">
