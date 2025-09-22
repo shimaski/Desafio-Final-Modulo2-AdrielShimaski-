@@ -148,7 +148,6 @@ sudo bash wazuh-install.sh -a
 
 ### Cronograma Detalhado
 
-![alt text](/imagens/crono.svg.svg)
+![alt text](/imagens/crono.svg.svg){width=1920px height=600px}
 
 
-<img src="/imagens/crono.svg.svg" alt="Loja Zeta" width="1980">
