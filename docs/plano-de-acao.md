@@ -150,3 +150,47 @@ sudo bash wazuh-install.sh -a
 
 ![alt text](/imagens/conos.png)
 
+# Checklist de Entregáveis - Loja Zeta
+
+---
+
+## Entrega Fase 1 (Dia 30)
+- Firewall configurado e testado  
+- VLANs implementadas e documentadas  
+- WAF ativo com regras OWASP  
+- Backup automatizado funcionando  
+- MFA implementado para administradores  
+
+---
+
+## Entrega Fase 2 (Dia 90)
+- SIEM operacional com >80% cobertura  
+- Alertas configurados e testados  
+- Dashboards de segurança ativos  
+- Equipe treinada no uso das ferramentas  
+
+---
+
+## Entrega Final (Dia 180)
+- Automação de respostas implementada  
+- Testes de penetração realizados  
+- Documentação completa entregue  
+- Plano de manutenção estabelecido  
+
+---
+
+# Comunicação e Reporting
+
+## Reuniões Regulares
+
+| Reunião       | Frequência | Participantes    | Objetivo                     |
+|---------------|------------|----------------|-------------------------------|
+| Status Project| Semanal    | Equipe completa | Acompanhamento do progresso   |
+| Técnica       | Quinzenal  | Equipe técnica  | Resolução de problemas        |
+| Steering      | Mensal     | Diretoria       | Decisões estratégicas         |
+
+## Métricas de Reporting
+- **Progresso:** % completado vs planejado  
+- **Riscos:** Novos riscos identificados  
+- **Qualidade:** Resultados dos testes  
+- **Orçamento:** Gastos vs planejado  
