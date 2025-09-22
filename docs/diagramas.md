@@ -2,6 +2,7 @@
 
 ---
 
+
 ## Diagrama de Arquitetura Principal
 
 ### Fluxo de Dados e Proteção
@@ -43,5 +44,38 @@ flowchart TB
     IAM --> Web2
 ```
    
+## Arquitetura de Rede
 
+# Segmentação e Security Zones
+```
+graph TB
+    Internet[Internet] --> DMZ[DMZ Zone]
     
+    subgraph DMZ [Zona Desmilitarizada]
+        WAF[WAF/Proxy]
+        LB[Load Balancer]
+    end
+    
+    subgraph APP [Zona Aplicação]
+        Web1[Web Server 1]
+        Web2[Web Server 2]
+        Cache[Redis Cache]
+    end
+    
+    subgraph DATA [Zona Dados]
+        DB_Primary[(DB Primary)]
+        DB_Replica[(DB Replica)]
+        Backup[Backup Server]
+    end
+    
+    subgraph MGMT [Zona Gerência]
+        SIEM[SIEM Server]
+        Monitor[Monitoring]
+        Admin[Admin Workstation]
+    end
+    
+    DMZ --> APP
+    APP --> DATA
+    MGMT --> APP
+    MGMT --> DATA
+```
