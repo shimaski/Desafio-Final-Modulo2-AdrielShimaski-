@@ -555,25 +555,25 @@ A estratégia **80/20** garantiu que os recursos limitados sejam alocados nas me
 - **Métricas de Acompanhamento:** Relatório quinzenal de progresso  
 - **Canal de Comunicação:** Reuniões semanais de alinhamento  
 
-**Ponto Focal:**  
+# Ponto Focal:**  
 Adriel Shimaski  
 ---
 
-## 📋 Checklist de Início Rápido
+##  Checklist de Início Rápido
 
-### Antes de Começar
+## Antes de Começar
 - [ ] Obter aprovação formal da diretoria  
 - [ ] Designar equipe do projeto  
 - [ ] Estabelecer canal de comunicação  
 - [ ] Definir reuniões de acompanhamento  
 
-### Primeira Semana
+## Primeira Semana
 - [ ] Configurar acesso às ferramentas  
 - [ ] Iniciar configuração do firewall  
 - [ ] Agendar treinamentos da equipe  
 - [ ] Documentar procedimentos básicos  
 
-### Primeiro Mês
+## Primeiro Mês
 - [ ] Completar implementação da Fase 1  
 - [ ] Realizar primeiro teste de backup  
 - [ ] Configurar alertas básicos  
