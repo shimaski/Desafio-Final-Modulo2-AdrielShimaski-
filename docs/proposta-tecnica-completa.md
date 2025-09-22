@@ -557,9 +557,6 @@ A estratégia **80/20** garantiu que os recursos limitados sejam alocados nas me
 
 **Ponto Focal:**  
 Adriel Shimaski  
-[inserir email de contato]  
-[inserir telefone para emergências]  
-
 ---
 
 ## 📋 Checklist de Início Rápido
