@@ -1,8 +1,5 @@
 # Proposta de Arquitetura de Defesa e Plano de Monitoramento/IR – Loja Zeta
 
-
-# PROPOSTA – Opção 2 (Consultoria de Segurança Cibernética)
-
 **Cliente:** LojaZeta  
 **Data:** 22/09/2025  
 **Consultor:** Adriel Shimaski  
