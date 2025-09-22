@@ -23,9 +23,9 @@ A arquitetura proposta oferece:
 
 - [Proposta Técnica Completa](docs/proposta-tecnica-completa.md)  
 - [Tecnologias e Ferramentas](docs/tecnologias.md)  
-- [Plano de Implementação](docs/implementacao/plano-acao.md)  
-- [Diagramas e Arquitetura](docs/diagramas.md)  
-- [Documento em PDF](docs/pdf/arquitetura-nodejs.pdf)  
+- [Plano de Implementação](/docs/implamentacao-faseada.md)
+- [Plano de Ação](/docs/plano-de-acao.md)   
+- [Diagramas e Arquitetura](/docs/diagramas.md)  
 
 ---
 
