@@ -1,6 +1,5 @@
 # Diagramas e Arquitetura - Loja Zeta
 
----
 
 ## Diagrama de Arquitetura Principal
 
