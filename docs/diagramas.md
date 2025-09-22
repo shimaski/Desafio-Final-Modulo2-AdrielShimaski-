@@ -125,3 +125,37 @@ flowchart LR
     C2 --> D2
     C2 --> D3
 ```
+## Topologia Física
+
+# Distribuição de Servidores
+```mermaid
+graph TB
+    subgraph DC_Primary [Data Center Primário]
+        FW1[Firewall Primary]
+        SW1[Switch Core]
+        
+        subgraph Rack1 [Rack 1 - Web]
+            WEB1[Web 1]
+            WEB2[Web 2]
+            LB1[Load Balancer]
+        end
+        
+        subgraph Rack2 [Rack 2 - Data]
+            DB1[DB Primary]
+            DB2[DB Replica]
+            ST1[Storage]
+        end
+    end
+    
+    subgraph DC_Backup [Data Center Backup]
+        FW2[Firewall Backup]
+        WEB3[Web Hot Standby]
+        DB3[DB Async Replica]
+    end
+    
+    Internet --> FW1
+    FW1 --> SW1
+    SW1 --> Rack1
+    SW1 --> Rack2
+    DB1 --> DB3
+```
