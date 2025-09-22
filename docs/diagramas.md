@@ -1,7 +1,5 @@
 
-## 4. docs/diagramas.md
 
-```markdown
 # Diagramas e Arquitetura - Loja Zeta
 
 ## Diagrama de Arquitetura Principal
