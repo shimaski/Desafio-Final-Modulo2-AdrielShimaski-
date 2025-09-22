@@ -47,7 +47,7 @@ flowchart TB
 ## Arquitetura de Rede
 
 # Segmentação e Security Zones
-```
+```mermaid
 graph TB
     Internet[Internet] --> DMZ[DMZ Zone]
     
