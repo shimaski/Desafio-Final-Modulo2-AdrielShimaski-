@@ -1,4 +1,4 @@
-![alt text](</docs/diagrama.png>)
+![alt text](/imagens/logo.png)
 
 # Proposta de Arquitetura de Defesa e Plano de Monitoramento/IR – Loja Zeta
 
