@@ -1,5 +1,6 @@
 # Diagramas e Arquitetura - Loja Zeta
 
+---
 
 ## Diagrama de Arquitetura Principal
 
@@ -40,7 +41,8 @@ flowchart TB
     
     IAM --> Web1
     IAM --> Web2
-
+```
+---
    
- ![alt text](/imagens/diagrama_fluxo.svg)
+
     
