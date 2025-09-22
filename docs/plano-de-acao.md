@@ -54,6 +54,7 @@
 sudo apt install nginx-module-security
 sudo cp owasp-crs.conf /etc/nginx/conf.d/
 sudo nginx -t && sudo systemctl reload nginx
+```
 
 # Testes a Realizar
 
@@ -69,11 +70,13 @@ sudo nginx -t && sudo systemctl reload nginx
 
 ### Atividades Principais
 
-#### Instalação Wazuh (Dias 31-45)
+### Instalação Wazuh (Dias 31-45)
+
 ```bash
 # Instalação servidor Wazuh
 curl -sO https://packages.wazuh.com/4.5/wazuh-install.sh
 sudo bash wazuh-install.sh -a
+```
 
 ## Configuração Agentes (Dias 46-60)
 
