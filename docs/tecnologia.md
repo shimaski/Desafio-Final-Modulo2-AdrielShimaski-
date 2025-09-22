@@ -68,7 +68,7 @@ WAF configuration (Web Application Firewall)
 modsecurity on;: Ativa o ModSecurity, um firewall de aplicações web.
 
 modsecurity_rules_file /etc/nginx/modsecurity.conf;: Define o arquivo de regras que o ModSecurity vai usar para filtrar ataques.
-
+----
 
 ---
 
@@ -119,7 +119,7 @@ Dependências no package.json
 
 ---
 
-# Explicação :
+### Explicação :
 
 helmet: Adiciona headers HTTP de segurança automaticamente (como os do Nginx) para prevenir ataques comuns.
 
@@ -142,8 +142,8 @@ app.use(rateLimit({
     message: 'Too many requests from this IP'
 }));
 
-------
-Explicação:
+---
+### Explicação:
 
 app.use(helmet()): Ativa todos os headers de segurança do Helmet.
 
