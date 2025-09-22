@@ -70,9 +70,9 @@ modsecurity on;: Ativa o ModSecurity, um firewall de aplicações web.
 modsecurity_rules_file /etc/nginx/modsecurity.conf;: Define o arquivo de regras que o ModSecurity vai usar para filtrar ataques.
 ---
 
----
-
 2. PostgreSQL Hardening
+
+
 -- Security configurations
 ALTER SYSTEM SET password_encryption = 'scram-sha-256';
 ALTER SYSTEM SET ssl = on;
