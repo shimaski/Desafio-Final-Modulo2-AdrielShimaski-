@@ -73,3 +73,47 @@ modsecurity on;: Ativa o ModSecurity, firewall de aplicações web.
 modsecurity_rules_file /etc/nginx/modsecurity.conf;: Define o arquivo de regras do ModSecurity.
 
 ---
+
+
+NODE.JS SECURITY SETTINGS
+
+Dependências no package.json:
+
+{
+  "dependencies": {
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.7.0",
+    "bcryptjs": "^2.4.3",
+    "express-validator": "^7.0.1"
+  }
+}
+
+
+Explicação :
+
+helmet: Adiciona headers HTTP de segurança automaticamente.
+
+express-rate-limit: Limita o número de requisições por IP.
+
+bcryptjs: Biblioteca para hash seguro de senhas.
+
+express-validator: Valida e sanitiza dados de entrada do usuário.
+
+Configuração no app.js:
+
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
+
+app.use(helmet());
+app.use(rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutos
+    max: 100, // Máximo de 100 requisições por IP
+    message: 'Too many requests from this IP'
+}));
+
+
+Explicação:
+
+app.use(helmet()): Ativa todos os headers de segurança do Helmet.
+
+app.use(rateLimit(...)): Configura limite de requisições por IP. Cada IP pode fazer até 100 requisições a cada 15 minutos. Se exceder, retorna a mensagem "Too many requests from this IP".
