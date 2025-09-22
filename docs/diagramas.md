@@ -5,7 +5,9 @@
 ## Diagrama de Arquitetura Principal
 
 ### Fluxo de Dados e Proteção
-```mermaid
+    
+    mermaid
+---
 flowchart TB
     Internet[Internet] --> CDN[CDN Cloudflare]
     CDN --> WAF[WAF/ModSecurity]
@@ -40,7 +42,7 @@ flowchart TB
     
     IAM --> Web1
     IAM --> Web2
-
-    ![alt text](/imagens/diagrama_fluxo.svg)
-
+---
+   
+ ![alt text](/imagens/diagrama_fluxo.svg)
     
