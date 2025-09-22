@@ -143,3 +143,7 @@ sudo bash wazuh-install.sh -a
 | Resistência da equipe       | Média         | Médio   | Treinamento e comunicação   |
 | Falta de recursos           | Baixa         | Alto    | Planejamento contingencial  |
 | Mudanças de escopo          | Baixa         | Médio   | Controle de mudanças        |
+
+----
+
+### Cronograma Detalhado
