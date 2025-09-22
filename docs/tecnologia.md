@@ -30,6 +30,35 @@
 
 # ESPECIFICAÇÕES DE CONFIGURAÇÃO
 
+
+Componentes:
+
+WAF/CRS: ModSecurity com regras OWASP Core Rule Set
+
+Rate Limiting: Limitação de requisições por IP/endpoint
+
+Geo-blocking: Bloqueio de tráfego de regiões de alto risco
+
+2.2 Camada de Rede
+Segmentação:
+
+VLAN 10: Rede pública (DMZ)
+
+VLAN 20: Rede de aplicação
+
+VLAN 30: Rede de banco de dados
+
+VLAN 40: Rede administrativa
+
+Controles:
+
+ACLs (Access Control Lists) entre VLANs
+
+NAC (Network Access Control) para dispositivos
+
+VPN site-to-site para acesso remoto seguro
+
+## Camada de Aplicação
 ---
 
 ## NGINX SECURITY CONFIGURATION
