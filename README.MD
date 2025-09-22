@@ -1,4 +1,4 @@
-![alt text](/imagens/logo.png)
+![alt text](/imagens/shimaski.png)
 
 # Proposta de Arquitetura de Defesa e Plano de Monitoramento/IR – Loja Zeta
 
@@ -26,6 +26,7 @@ A arquitetura proposta oferece:
 - [Plano de Implementação](/docs/implamentacao-faseada.md)
 - [Plano de Ação](/docs/plano-de-acao.md)   
 - [Diagramas e Arquitetura](/docs/diagramas.md)  
+- [PDF Complento da documentação](/pdf/proposta-completa.pdf)  
 
 ---
 
