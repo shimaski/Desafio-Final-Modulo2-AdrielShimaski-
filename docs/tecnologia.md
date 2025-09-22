@@ -51,15 +51,15 @@ http {
 
 Security headers
 
-##  X-Frame-Options DENY: Bloqueia o carregamento do site em frames/iframes, prevenindo ataques de clickjacking.
+  X-Frame-Options DENY: Bloqueia o carregamento do site em frames/iframes, prevenindo ataques de clickjacking.
 
-##  X-Content-Type-Options nosniff: Evita que navegadores interpretem arquivos como um tipo diferente do que foi declarado pelo servidor, prevenindo alguns ataques de MIME-type.
+ X-Content-Type-Options nosniff: Evita que navegadores interpretem arquivos como um tipo diferente do que foi declarado pelo servidor, prevenindo alguns ataques de MIME-type.
  
-## X-XSS-Protection "1; mode=block": Habilita proteção contra Cross-Site Scripting (XSS) em navegadores que suportam este header.
+ X-XSS-Protection "1; mode=block": Habilita proteção contra Cross-Site Scripting (XSS) em navegadores que suportam este header.
 
-### Rate limiting
+ Rate limiting
 
-# limit_req_zone $binary_remote_addr zone=login:10m rate=10r/m;: Define uma zona de limite de requisições por IP ($binary_remote_addr) chamada login. Limita cada IP a 10 requisições por minuto, ajudando a prevenir ataques de força bruta.
+limit_req_zone $binary_remote_addr zone=login:10m rate=10r/m;: Define uma zona de limite de requisições por IP ($binary_remote_addr) chamada login. Limita cada IP a 10 requisições por minuto, ajudando a prevenir ataques de força bruta.
 
 WAF configuration (Web Application Firewall)
 
