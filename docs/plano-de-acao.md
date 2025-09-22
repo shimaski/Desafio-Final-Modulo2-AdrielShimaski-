@@ -148,9 +148,6 @@ sudo bash wazuh-install.sh -a
 
 ### Cronograma Detalhado
 
-![alt text](/imagens/conos.png)
-
-
 ```mermaid
 gantt
     title Cronograma de Implementação - Loja Zeta
