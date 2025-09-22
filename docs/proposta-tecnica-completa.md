@@ -578,3 +578,5 @@ Adriel Shimaski
 - [ ] Realizar primeiro teste de backup  
 - [ ] Configurar alertas básicos  
 - [ ] Documentar lições aprendidas  
+
+

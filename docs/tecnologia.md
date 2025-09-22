@@ -171,3 +171,90 @@ Explicação:
 app.use(helmet()): Ativa todos os headers de segurança do Helmet.
 
 app.use(rateLimit(...)): Configura limite de requisições por IP. Cada IP pode fazer até 100 requisições a cada 15 minutos. Se exceder, retorna a mensagem "Too many requests from this IP".
+
+```
+
+# FERRAMENTAS DE DESENVOLVIMENTO E OPERAÇÃO
+
+---
+
+## 1. CI/CD Pipeline
+
+| Estágio          | Ferramenta       | Configuração                        |
+|-----------------|-----------------|------------------------------------|
+| Version Control  | Git + GitHub     | Branch protection rules             |
+| CI               | GitHub Actions   | Security scanning automático        |
+| Testing          | Jest + Supertest | Testes de segurança incluídos       |
+| Container        | Docker           | Images assinadas e verificadas      |
+
+---
+
+## 2. Monitoramento e Alertas
+
+| Métrica     | Ferramenta  | Threshold                 |
+|------------|------------|---------------------------|
+| Uptime      | Pingdom    | 99.9% SLA                 |
+| Performance | New Relic  | Response time < 200ms     |
+| Security    | Wazuh      | Alertas em tempo real      |
+| Logs        | ELK Stack  | Retenção 90 dias           |
+
+---
+
+## 3. Licenças e Custos
+
+### 3.1 Open Source (Gratuito)
+
+- **Wazuh:** SIEM e monitoramento  
+- **ModSecurity:** WAF  
+- **Prometheus:** Coleta de métricas  
+- **Grafana:** Visualização  
+- **Trivy:** Scan de vulnerabilidades  
+
+### 3.2 Commercial (Custos Estimados)
+
+| Ferramenta      | Custo Mensal | Fornecedor     |
+|-----------------|-------------|----------------|
+| Cloudflare      | R$ 200,00   | Cloudflare     |
+| GitHub Team     | R$ 100,00   | GitHub         |
+| New Relic       | R$ 300,00   | New Relic      |
+| **Total Estimado** | **R$ 600,00/mês** |          |
+
+---
+
+## 4. Requisitos de Sistema
+
+### 4.1 Servidores de Produção
+
+| Tipo       | vCPU | RAM   | Storage      | Qtd |
+|-----------|------|------|-------------|-----|
+| Web       | 4    | 8GB  | 100GB SSD   | 2   |
+| Database  | 8    | 16GB | 200GB SSD   | 2   |
+| Monitoring| 2    | 4GB  | 500GB HDD   | 1   |
+
+### 4.2 Requisitos de Rede
+
+- Largura de banda: 100 Mbps dedicados  
+- Latência: < 50ms para usuários principais  
+- Firewall: Regras específicas por serviço  
+
+---
+
+## 5. Matriz de Compatibilidade
+
+### 5.1 Versões Suportadas
+
+| Componente  | Versão Atual | EOL        | Upgrade Planejado |
+|------------|--------------|------------|-----------------|
+| Node.js    | 18.17.0      | Abr/2025   | Nov/2024        |
+| PostgreSQL | 15.3         | Nov/2027   | Jan/2025        |
+| Nginx      | 1.22.1       | Abr/2026   | Mar/2025        |
+
+---
+
+## 6. Dependências de Segurança
+
+| Pacote      | Versão   | Vulnerabilidades Conhecidas |
+|------------|----------|----------------------------|
+| Express.js | 4.18.2   | Nenhuma crítica           |
+| Helmet     | 7.0.0    | Nenhuma crítica           |
+| bcryptjs   | 2.4.3    | Nenhuma crítica           |
