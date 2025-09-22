@@ -148,6 +148,7 @@ sudo bash wazuh-install.sh -a
 
 ### Cronograma Detalhado
 
-![alt text](/imagens/crono.svg.svg){width=1920px height=600px}
+![alt text](/imagens/crono.svg)
 
+![alt text](/imagens/conos.png)
 
