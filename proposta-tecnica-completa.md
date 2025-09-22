@@ -4,7 +4,7 @@
 # PROPOSTA – Opção 2 (Consultoria de Segurança Cibernética)
 
 **Cliente:** LojaZeta  
-**Data:** 2025-09-21  
+**Data:** 22/09/2025  
 **Consultor:** Adriel Shimaski  
 
 ## 1. Sumário Executivo
