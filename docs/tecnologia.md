@@ -33,7 +33,8 @@
 ### Nginx Security Configuration
 1. Nginx Security Configuration
 # /etc/nginx/nginx.conf
-http {
+---
+    http {
     # Security headers
     add_header X-Frame-Options DENY;
     add_header X-Content-Type-Options nosniff;
@@ -45,8 +46,8 @@ http {
     # WAF configuration
     modsecurity on;
     modsecurity_rules_file /etc/nginx/modsecurity.conf;
-}
-
+    }
+---
 ### Explicação:
 
 Security headers
