@@ -26,7 +26,7 @@ A arquitetura proposta oferece:
 - [Plano de Implementação](/docs/implamentacao-faseada.md)
 - [Plano de Ação](/docs/plano-de-acao.md)   
 - [Diagramas e Arquitetura](/docs/diagramas.md)  
-- [PDF Complento da documentação](/pdf/proposta-completa.pdf)  
+- [PDF Completo da documentação](/pdf/proposta-completa.pdf)  
 
 ---
 
