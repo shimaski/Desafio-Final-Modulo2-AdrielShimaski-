@@ -5,7 +5,6 @@
 ## Diagrama de Arquitetura Principal
 
 ### Fluxo de Dados e Proteção
----
 mermaid
 flowchart TB
     Internet[Internet] --> CDN[CDN Cloudflare]
